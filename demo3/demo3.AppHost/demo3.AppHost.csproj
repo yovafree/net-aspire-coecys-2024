@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>99bfeeaa-c8ad-4d5c-a7d7-8cf7761eaeca</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\demo3.ApiService\demo3.ApiService.csproj" />
+    <ProjectReference Include="..\demo3.Web\demo3.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0-preview.7.24251.11" />
+  </ItemGroup>
+
+</Project>
